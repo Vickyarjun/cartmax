@@ -4,8 +4,8 @@
   "description": "",
   "main": "index.js",
   "engines": {
-    "node": ">=16.0.0",
-    "npm": ">=6.0.0"
+    "node": "16.15.0",
+    "npm": "8.5.5"
   },
   "scripts": {
     "build": "cd backend && npm install  && cd ../frontend && npm install && npm run build",
