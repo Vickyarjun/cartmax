@@ -163,17 +163,6 @@ function App() {
         <main>
           <Container className="mt-3">
             <Routes>
-              <Route path="/product/:slug" element={<ProductScreen />} />
-              {/* Admin Routes */}
-              <Route
-                path="/admin/dashboard"
-                element={
-                  <AdminRoute>
-                    <DashboardScreen />
-                  </AdminRoute>
-                }
-              ></Route>
-
               <Route path="/" element={<HomeScreen />} />
               <Route path="/cart" element={<CartScreen />} />
               <Route path="/search" element={<SearchScreen />} />
@@ -196,6 +185,24 @@ function App() {
                   <ProtectedRoute>
                     <OrderScreen />
                   </ProtectedRoute>
+                }
+              ></Route>
+              <Route
+                path="/orderhistory"
+                element={
+                  <ProtectedRoute>
+                    <OrderHistoryScreen />
+                  </ProtectedRoute>
+                }
+              />
+              <Route path="/product/:slug" element={<ProductScreen />} />
+              {/* Admin Routes */}
+              <Route
+                path="/admin/dashboard"
+                element={
+                  <AdminRoute>
+                    <DashboardScreen />
+                  </AdminRoute>
                 }
               ></Route>
               <Route
@@ -238,14 +245,6 @@ function App() {
                   </AdminRoute>
                 }
               ></Route>
-              <Route
-                path="/orderhistory"
-                element={
-                  <ProtectedRoute>
-                    <OrderHistoryScreen />
-                  </ProtectedRoute>
-                }
-              />
             </Routes>
           </Container>
         </main>
