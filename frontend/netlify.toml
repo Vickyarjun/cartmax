@@ -1,3 +1,7 @@
+[build]
+  publish = "build"
+  command = "npm install && npm run build"
+
   #The following redirect is intended to redirect to api
   [[redirects]]
    from = "/api/*"
