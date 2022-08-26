@@ -1,6 +1,6 @@
 [build]
   publish = "build"
-  command = "npm build"
+  command = "npm run build"
 
   #The following redirect is intended to redirect to api
   [[redirects]]
