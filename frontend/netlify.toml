@@ -2,11 +2,7 @@
   publish = "build"
   command = "CI=false npm run build"
 
-  [[redirects]]
-   /api/* "https://cartmax-server.herokuapp.com"
-   /* "/index.html 200" 
-
-  #The following redirect is intended to redirect to api
+ #The following redirect is intended to redirect to api
   [[redirects]]
    from = "/api/*"
    to = "https://cartmax-server.herokuapp.com"
