@@ -193,7 +193,7 @@ export default function OrderScreen() {
   ) : error ? (
     <MessageBox variant="danger">{error}</MessageBox>
   ) : (
-    <div>
+    <div className="product-view">
       <Helmet>
         <title>Order {orderId}</title>
       </Helmet>

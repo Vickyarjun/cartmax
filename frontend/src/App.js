@@ -34,6 +34,7 @@ import ProductEditScreen from './Screens/ProductEditScreen';
 import OrderListScreen from './Screens/OrderListScreen';
 import UserListScreen from './Screens/UserListScreen';
 import UserEditScreen from './Screens/UserEditScreen';
+import Footer from './Screens/footer';
 function App() {
   const { state, dispatch: ctxDispatch } = useContext(Store);
   const { cart, userInfo } = state;
@@ -70,7 +71,7 @@ function App() {
       >
         <ToastContainer position="bottom-center" limit={1} />
         <header>
-          <Navbar bg="dark" variant="dark" expand="lg">
+          <Navbar className="fix" bg="dark" variant="dark" expand="lg">
             <Container>
               <Button
                 variant="dark"
@@ -248,9 +249,7 @@ function App() {
             </Routes>
           </Container>
         </main>
-        <footer>
-          <div className="text-center">All rights reserved.</div>
-        </footer>
+        <Footer />
       </div>
     </BrowserRouter>
   );

@@ -73,10 +73,10 @@ main {
 }
 .side-navbar {
   width: 240px;
-  height: 100%;
-  position: absolute;
+  height: 100vh;
+  position: fixed;
   left: -300px;
-  background-color: #100901;
+  background-color: #212529;
   transition: 0.5s;
 }
 .site-container {
@@ -96,4 +96,23 @@ main {
 
 button.thumbnail {
   padding: 0;
+}
+
+.fix {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+}
+
+.product-view {
+  margin-top: 4.625em;
+}
+.main-footer {
+  color: whitesmoke;
+  background-color: #212529;
+  padding-top: 3em;
+  position: relative;
+  bottom: 0;
+  width: 100%;
 }

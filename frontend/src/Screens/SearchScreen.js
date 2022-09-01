@@ -36,16 +36,20 @@ const reducer = (state, action) => {
 
 const prices = [
   {
-    name: '$20 to $50',
-    value: '20-50',
-  },
-  {
     name: '$50 to $100',
     value: '50-100',
   },
   {
     name: '$100 to $200',
     value: '100-200',
+  },
+  {
+    name: '$200 to $300',
+    value: '200-300',
+  },
+  {
+    name: 'above $300',
+    value: '300-2000',
   },
 ];
 export const ratings = [
@@ -128,7 +132,7 @@ export default function SearchScreen() {
   };
 
   return (
-    <div>
+    <div className="product-view">
       <Helmet>
         <title>Search Products</title>
       </Helmet>
