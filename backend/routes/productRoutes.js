@@ -236,5 +236,3 @@ productRouter.get('/:id', async (req, res) => {
 });
 
 export default productRouter;
-
-//3.18.00 hr
